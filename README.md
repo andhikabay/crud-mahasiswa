@@ -52,7 +52,7 @@ php artisan serve
 
 ---
 
- **Pastikan**:
+Pastikan :
 
 - Database MySQL dengan nama `crud_mahasiswa` udah dibuat (bisa via phpMyAdmin).
 - Sudah menjalankan `composer install` dan `php artisan migrate` setelah clone repo.
@@ -60,7 +60,7 @@ php artisan serve
 
 ---
 
-##  Struktur Penting
+Struktur Penting :
 
 | Path                                           | Fungsi                                 |
 |------------------------------------------------|----------------------------------------|
@@ -72,14 +72,13 @@ php artisan serve
 
 ---
 
-##  Catatan Penting
+Catatan Penting :
 
 - File `.env`, `vendor/`, dan `node_modules/` **tidak diupload** ke GitHub agar lebih ringan dan aman.
 
-
 ---
 
-##  File yang Diabaikan (.gitignore)
+File yang Diabaikan (.gitignore) :
 
 | File/Folder         | Alasan                                       |
 |---------------------|----------------------------------------------|
@@ -91,7 +90,7 @@ php artisan serve
 
 ---
 
-##  Author
+Author :
 
 Made with love by [@andhikabay](https://github.com/andhikabay)
 Tugas Pemrograman Web – 2025
