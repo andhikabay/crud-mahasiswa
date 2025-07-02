@@ -1,61 +1,98 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Tugas UAS Pemrograman Web – CRUD Mahasiswa
+
+-   Nama : Andhika Bayu Satriaji
+-   NIM : 231110081
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <a href="https://laravel.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="300" alt="Laravel Logo">
+  </a>
 </p>
 
-## About Laravel
+<h1 align="center"> CRUD Mahasiswa – Laravel</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  CRUD application for managing student data using Laravel<br>
+  <i>Developed for Tugas Pemrograman Web 2025</i>
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 Fitur Aplikasi
 
-## Learning Laravel
+-   🔍 Lihat data mahasiswa
+-   ➕ Tambah mahasiswa baru
+-   ✏️ Edit data mahasiswa
+-   🗑️ Hapus mahasiswa (dengan konfirmasi modal)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Teknologi
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Tools        | Keterangan                  |
+| ------------ | --------------------------- |
+| Laravel 10   | Backend Framework           |
+| Blade        | Templating engine           |
+| Tailwind CSS | Styling modern & responsive |
+| MySQL        | Database                    |
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Cara Menjalankan Project
 
-### Premium Partners
+```bash
+git clone https://github.com/andhikabay/crud-mahasiswa.git
+cd crud-mahasiswa
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan serve
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+ **Pastikan**:
 
-## Code of Conduct
+- Database MySQL dengan nama `crud_mahasiswa` udah dibuat (bisa via phpMyAdmin).
+- Sudah menjalankan `composer install` dan `php artisan migrate` setelah clone repo.
+- File `.env` dibuat dari `.env.example` dan disesuaikan sesuai setting lokal.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+##  Struktur Penting
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+| Path                                           | Fungsi                                 |
+|------------------------------------------------|----------------------------------------|
+| `app/Models/Mahasiswa.php`                     | Model data Mahasiswa                   |
+| `app/Http/Controllers/MahasiswaController.php` | Controller utama untuk CRUD            |
+| `resources/views/mahasiswa/`                   | Folder view (index, create, edit, dsb) |
+| `routes/web.php`                               | Routing utama aplikasi Laravel         |
+| `database/migrations/`                         | Struktur tabel database via migration  |
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+##  Catatan Penting
+
+- File `.env`, `vendor/`, dan `node_modules/` **tidak diupload** ke GitHub agar lebih ringan dan aman.
+
+
+---
+
+##  File yang Diabaikan (.gitignore)
+
+| File/Folder         | Alasan                                    |
+|---------------------|-------------------------------------------|
+| `.env`              | Berisi informasi sensitif (DB, key, dsb)  |
+| `vendor/`           | Hasil composer install (besar & rebuildable) |
+| `node_modules/`     | Hasil npm install (besar & rebuildable)   |
+| `.idea/`, `.vscode/`| Settingan editor pribadi                  |
+| `storage/logs/`     | File log error yang tidak dibutuhkan      |
+
+---
+
+##  Author
+
+Made with 💙 by [@andhikabay](https://github.com/andhikabay)
+📝 Tugas Pemrograman Web – 2025
+```
