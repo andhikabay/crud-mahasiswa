@@ -18,7 +18,7 @@
 
 ---
 
-##  Fitur Aplikasi
+## Fitur Aplikasi
 
 -   Lihat data mahasiswa
 -   Tambah mahasiswa baru
@@ -81,13 +81,13 @@ php artisan serve
 
 ##  File yang Diabaikan (.gitignore)
 
-| File/Folder         | Alasan                                    |
-|---------------------|-------------------------------------------|
-| `.env`              | Berisi informasi sensitif (DB, key, dsb)  |
+| File/Folder         | Alasan                                       |
+|---------------------|----------------------------------------------|
+| `.env`              | Berisi informasi sensitif (DB, key, dsb)     |
 | `vendor/`           | Hasil composer install (besar & rebuildable) |
-| `node_modules/`     | Hasil npm install (besar & rebuildable)   |
-| `.idea/`, `.vscode/`| Settingan editor pribadi                  |
-| `storage/logs/`     | File log error yang tidak dibutuhkan      |
+| `node_modules/`     | Hasil npm install (besar & rebuildable)      |
+| `.idea/`, `.vscode/`| Settingan editor pribadi                     |
+| `storage/logs/`     | File log error yang tidak dibutuhkan         |
 
 ---
 
