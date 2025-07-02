@@ -18,12 +18,12 @@
 
 ---
 
-## 🚀 Fitur Aplikasi
+##  Fitur Aplikasi
 
--   🔍 Lihat data mahasiswa
--   ➕ Tambah mahasiswa baru
--   ✏️ Edit data mahasiswa
--   🗑️ Hapus mahasiswa (dengan konfirmasi modal)
+-   Lihat data mahasiswa
+-   Tambah mahasiswa baru
+-   Edit data mahasiswa
+-   Hapus mahasiswa (dengan konfirmasi modal)
 
 ---
 
@@ -93,6 +93,6 @@ php artisan serve
 
 ##  Author
 
-Made with 💙 by [@andhikabay](https://github.com/andhikabay)
-📝 Tugas Pemrograman Web – 2025
+Made with love by [@andhikabay](https://github.com/andhikabay)
+Tugas Pemrograman Web – 2025
 ```
